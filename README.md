@@ -142,17 +142,17 @@ Output:
 
 The Zscore output comprises several files:
 
-<name>_score.wig                            Zscore in wig format
+(name)_score.wig                            Zscore in wig format
 
-<name>_ALL_NotCentered_<Parameters>.bed     Called peaks in bed format where <Parameters>=W<optimized_window_size>_T<THR>_J<DCLUST>_S<SIZEMIN>
+(name)_ALL_NotCentered_<Parameters>.bed     Called peaks in bed format where (Parameters)=W(optimized_window_size)_T(THR)_J(DCLUST)_S(SIZEMIN)
 
-<name>_ALL_<Parameters>.bed                 Called peaks in bed format, centered so that the mid point coincides with the maximum of the Z-score
+(name)_ALL_(Parameters).bed                 Called peaks in bed format, centered so that the mid point coincides with the maximum of the Z-score
 
-Properties_<name>.dat                       Table in text format with the input genomic and epigenomic properties of every called peak, if these properties are provided
+Properties_(name).dat                       Table in text format with the input genomic and epigenomic properties of every called peak, if these properties are provided
 
 Optional output: 
 
 If a reference set of peaks is input as PREDICTION, the program outputs the list of peaks that overlap with the reference
-(<name>_OLD_<Parameters>.bed), that do not overlap with it (<name>_NEW_<Parameters>.bed) and the reference peaks that are
-not found in the current experiment (<name>_notfound_<Parameters>.bed)
+((name)_OLD_(Parameters).bed), that do not overlap with it ((name)_NEW_(Parameters).bed) and the reference peaks that are
+not found in the current experiment ((name)_notfound_(Parameters).bed)
 
