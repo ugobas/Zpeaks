@@ -6,6 +6,8 @@ Centro de Biologia Molecular Severo Ochoa (CSIC-UAM), Madrid Spain
 ZPeaks calls peaks from genomic experiments. It computes the Z score of experimental reads with respect to control reads (if the control is absent, averaged experiment reads are used) over windows. The window size is optimized in such a way to maximize the discrimination power of the method.
 
 Installation (linux):
+- download ZPeaks.zip to your computer
+>mkdir <dir-name> (create a directory where ZPeaks will be stored)
 >mv ZPeaks.zip <dir-name>
 >cd <dir-name>
 >unzip ZPeaks.zip
