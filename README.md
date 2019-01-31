@@ -3,7 +3,6 @@
 The program ZPeaks calls peaks from a genomic (NGS) experiment, comparing experiment and control over optimized windows.
 
 Author: Ugo Bastolla <ubastolla@cbm.csic.es>
-
 Centro de Biologia Molecular Severo Ochoa (CSIC-UAM), Madrid Spain
 
 ###############################################################
@@ -16,7 +15,7 @@ Installation (linux):
 
 Download ZPeaks.zip to your computer and execute the following commands:
 
- >mkdir dir-name (create a directory where ZPeaks will be stored)
+>mkdir dir-name (create a directory where ZPeaks will be stored)
 
 >mv ZPeaks.zip dir-name
 
