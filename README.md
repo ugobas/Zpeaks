@@ -1,9 +1,11 @@
-###################### ZPeaks
+###################### ZPeaks ################################
 
 The program ZPeaks calls peaks from a genomic (NGS) experiment, comparing experiment and control over optimized windows.
 Author: Ugo Bastolla <ubastolla@cbm.csic.es>
 Centro de Biologia Molecular Severo Ochoa (CSIC-UAM), Madrid Spain
-######################
+
+###############################################################
+
 
 ZPeaks calls peaks from genomic experiments. It computes the Z score of experimental reads with respect to control reads (if the control is absent, averaged experiment reads are used) over windows.
 The window size is optimized in such a way to maximize the discrimination power of the method.
@@ -40,11 +42,8 @@ DCLUST=<Distance threshold for joining fragments> [default=200] (Fragments above
 SIZE_MIN=<Minimum size for calling a peak> (Fragments smaller than SIZE_MIN are ignored, default=100)
 DTOL=<Tolerance for comparison> [default=50] (Tolerance for identifying called peaks and reference peaks)
 PEAKSIZE=<Peak size in bp> [default=150] (The property of called peaks are computed at +/-PEAKSIZE around the midpoint)
-
 EXPER:
-
 DIR=<path/to/exper/files>
-
 <exper_file_1> (either one file or one file for each chromosome in WIG format, MANDATORY)
 
 <exper_file_2> (OPTIONAL)
