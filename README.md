@@ -35,45 +35,85 @@ WIG format:     https://genome.ucsc.edu/FAQ/FAQformat.html#format6
 
 FORMAT of the configuration file:
 
+
 THR=<Threshold for positives> [default=2.50]
+
 DCLUST=<Distance threshold for joining fragments> [default=200] (Fragments above threshold that are at a bp distance < DCLUST are joined)
+
 SIZE_MIN=<Minimum size for calling a peak> (Fragments smaller than SIZE_MIN are ignored, default=100)
+
 DTOL=<Tolerance for comparison> [default=50] (Tolerance for identifying called peaks and reference peaks)
+
 PEAKSIZE=<Peak size in bp> [default=150] (The property of called peaks are computed at +/-PEAKSIZE around the midpoint)
+
 EXPER:
+
 DIR=<path/to/exper/files>
+
 <exper_file_1> (either one file or one file for each chromosome in WIG format, MANDATORY)
+
 <exper_file_2> (OPTIONAL)
+
 ... 
+
 <exper_file_n> (OPTIONAL)
+
 END
+
 CONTROL:
+
 DIR=<path/to/control/files>
+
 <control_file> (either one file or one file for each chromosome, OPTIONAL)
+
 END
+
 PREDICTION:
+
 DIR=<path/to/reference/peaks>
+
 <reference/peaks> (just one file, bed format OPTIONAL)
+
 END
+
 PROF1 <profile_name_1>
+
 DIR=<path/to/prof_1>
+
 <prof_1_file_1> (either single file or one for each chromosome, OPTIONAL)
+
 <prof_1_file_2> (OPTIONAL)
+
 ... 
+
 <prof_1_file_n> (OPTIONAL)
+
 END
+
 PROF2 <profile_name_2>
+
 DIR=<path/to/prof_2>
+
 <prof_2_file_1> (either single file or one for each chromosome, OPTIONAL)
+
 <prof_2_file_2> (OPTIONAL)
+
 ... 
+
 <prof_2_file_n> (OPTIONAL)
+
 END
+
 ....
+
 PROFn <profile_name_n>
+
 DIR=<path/to/prof_n>
+
 <prof_n_file_1> (either single file or one for each chromosome, OPTIONAL)
+
 <prof_n_file_2> (OPTIONAL)
+
 ... 
 <prof_n_file_n> (OPTIONAL)
 END
