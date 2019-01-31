@@ -35,15 +35,10 @@ WIG format:     https://genome.ucsc.edu/FAQ/FAQformat.html#format6
 
 FORMAT of the configuration file:
 
-
 THR=<Threshold for positives> [default=2.50]
-
 DCLUST=<Distance threshold for joining fragments> [default=200] (Fragments above threshold that are at a bp distance < DCLUST are joined)
-
 SIZE_MIN=<Minimum size for calling a peak> (Fragments smaller than SIZE_MIN are ignored, default=100)
-
 DTOL=<Tolerance for comparison> [default=50] (Tolerance for identifying called peaks and reference peaks)
-
 PEAKSIZE=<Peak size in bp> [default=150] (The property of called peaks are computed at +/-PEAKSIZE around the midpoint)
 
 EXPER:
